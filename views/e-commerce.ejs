@@ -1,0 +1,235 @@
+<%- include("partials/header.ejs") %>
+
+<style>
+  body {
+      background-color: #121212;
+      color: #ffffff;
+      font-family: 'Poppins', sans-serif;
+  }
+
+  h2 {
+      color: #e0e0e0;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 700;
+      position: relative;
+      margin-bottom: 30px;
+      animation: fadeIn 1.5s ease-in-out;
+  }
+
+  h2::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 3px;
+      background-color: #ff5722;
+      margin-top: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      animation: slideIn 1s ease-in-out;
+  }
+
+  .text-body-emphasis {
+      color: #ff5722;
+      animation: pulse 2s infinite;
+  }
+
+  .text-body-secondary {
+      color: #b0bec5;
+  }
+
+  .container {
+      padding: 20px;
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+      margin-bottom: 40px;
+      animation: fadeInUp 1.5s ease-in-out;
+  }
+
+  .feature-icon-small {
+      background-color: #ff5722;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      box-shadow: 0 0 10px rgba(255, 87, 34, 0.6);
+      animation: jump 2s infinite;
+  }
+
+  .feature-icon-small svg {
+      fill: #ffffff;
+      width: 25px;
+      height: 25px;
+  }
+
+  .feature-icon-small:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 20px rgba(255, 87, 34, 0.9);
+  }
+
+  p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      animation: fadeIn 2s ease-in-out;
+  }
+
+  a {
+      color: #ff5722;
+      text-decoration: none;
+      transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+  }
+
+  a:hover {
+      color: #ff7043;
+      text-shadow: 0 0 8px rgba(255, 112, 67, 0.8);
+  }
+
+  .img-fluid {
+      margin-top: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  }
+
+  .img-fluid:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.9);
+  }
+
+  @media (max-width: 768px) {
+      h2 {
+          font-size: 1.5rem;
+      }
+
+      p {
+          font-size: 1rem;
+      }
+  }
+
+  /* Animations */
+  @keyframes fadeIn {
+      from {
+          opacity: 0;
+      }
+      to {
+          opacity: 1;
+      }
+  }
+
+  @keyframes slideIn {
+      from {
+          width: 0;
+      }
+      to {
+          width: 60px;
+      }
+  }
+
+  @keyframes fadeInUp {
+      from {
+          opacity: 0;
+          transform: translateY(20px);
+      }
+      to {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }
+
+  @keyframes pulse {
+      0%, 100% {
+          opacity: 1;
+      }
+      50% {
+          opacity: 0.7;
+      }
+  }
+
+  @keyframes jump {
+      0%, 20%, 50%, 80%, 100% {
+          transform: translateY(0);
+      }
+      40% {
+          transform: translateY(-20px);
+      }
+      60% {
+          transform: translateY(-10px);
+      }
+  }
+</style>
+
+<section>
+    <div class="container px-4 py-5" style="margin-top: 30px;">
+        <h2 class="pb-2 border-bottom">Project-II</h2>
+    
+        <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+            <div class="col d-flex flex-column align-items-start gap-2">
+                <h2 class="fw-bold text-white">Referral based E-commerce site (MLM)</h2>
+                <p class="text-white">A referral based E-commerce site where you can refer your Id to other which increase your total referrals and you earn from it.</p>
+            </div>
+    
+            <div class="col">
+                <div class="row row-cols-1 row-cols-sm-2 g-4">
+                    <div class="col d-flex flex-column gap-2">
+                        <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-card-heading" viewBox="0 0 16 16">
+                            <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"/>
+                            <path d="M3 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5m0-5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5z"/>
+                          </svg>
+                        </div>
+                        <h4 class="fw-semibold mb-0 text-white">Description</h4>
+                        <p class="text-white">A referral based E-commerce site where you can refer your Id to other which increase your toatl referrals, a login page and a register page where a new user register their self. All the data is secured and saved.</p>
+                    </div>
+    
+                    <div class="col d-flex flex-column gap-2">
+                        <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                            <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+                          </svg>
+                        </div>
+                        <h4 class="fw-semibold mb-0 text-white">Features</h4>
+                        <p class="text-white">Home page, user details, payment page, product page, login-page, register-page, reset your password.</p>
+                    </div>
+    
+                    <div class="col d-flex flex-column gap-2">
+                        <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-alipay" viewBox="0 0 16 16">
+                            <path d="M2.541 0H13.5a2.55 2.55 0 0 1 2.54 2.563v8.297c-.006 0-.531-.046-2.978-.813-.412-.14-.916-.327-1.479-.536q-.456-.17-.957-.353a13 13 0 0 0 1.325-3.373H8.822V4.649h3.831v-.634h-3.83V2.121H7.26c-.274 0-.274.273-.274.273v1.621H3.11v.634h3.875v1.136h-3.2v.634H9.99c-.227.789-.532 1.53-.894 2.202-2.013-.67-4.161-1.212-5.51-.878-.864.214-1.42.597-1.746.998-1.499 1.84-.424 4.633 2.741 4.633 1.872 0 3.675-1.053 5.072-2.787 2.08 1.008 6.37 2.738 6.387 2.745v.105A2.55 2.55 0 0 1 13.5 16H2.541A2.55 2.55 0 0 1 0 13.437V2.563A2.55 2.55 0 0 1 2.541 0"/>
+                            <path d="M2.309 9.27c-1.22 1.073-.49 3.034 1.978 3.034 1.434 0 2.868-.925 3.994-2.406-1.602-.789-2.959-1.353-4.425-1.207-.397.04-1.14.217-1.547.58Z"/>
+                          </svg>
+                        </div>
+                        <h4 class="fw-semibold mb-0 text-white">Technology and Language Used</h4>
+                        <p class="text-white">HTML, CSS, Bootstrap, JavaScript, Node.js, Express.js, SQL, PostreSQL.</p>
+                    </div>
+    
+                    <div class="col d-flex flex-column gap-2">
+                        <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
+                            <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"/>
+                            <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"/>
+                          </svg>
+                        </div>
+                        <h4 class="fw-semibold mb-0 text-white">Github Link</h4>
+                        <a href="https://github.com/Nitinchauhan001/E-commerce"><p class="text-white">Click to view</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h2 class="pb-2 border-bottom">Project Images</h2>
+        <img src="../images/e-commerce (2).jpg" class="img-fluid" alt="img1">
+        <img src="../images/e-commerce (3).jpg" class="img-fluid" alt="img2">
+        <img src="../images/e-commerce (1).jpg" class="img-fluid" alt="img3">
+        <img src="../images/e-commerce (4).jpg" class="img-fluid" alt="img4">
+    </div>
+</section>
+
+<%- include("partials/footer.ejs") %>

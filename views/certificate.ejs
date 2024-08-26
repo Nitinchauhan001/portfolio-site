@@ -1,0 +1,72 @@
+<%- include("partials/header.ejs") %>
+
+<style>
+    body {
+    background-color: #121212; 
+    color: #ffffff; 
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.animate-text {
+    animation: fadeInText 2s ease-in-out;
+    position: relative;
+}
+
+@keyframes fadeInText {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.hover-effect {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-effect:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.text-light {
+    color: #ffffff !important;
+}
+
+</style>
+
+<div class="container py-5" style="margin-top: 35px;">
+    <h3 class="text-light text-center mb-4 animate-text">NISM Series VIII: Equity and Derivatives</h3>
+    <div class="text-center mb-5">
+        <img src="../images/certificate (5).jpg" alt="NISM Series VIII Certificate" class="img-fluid rounded shadow-lg hover-effect">
+    </div>
+
+    <h3 class="text-light text-center mb-4 animate-text">NPTEL Introduction to C Programming</h3>
+    <div class="text-center mb-5">
+        <img src="../images/certificate (2).jpg" alt="NPTEL C Programming Certificate" class="img-fluid rounded shadow-lg hover-effect">
+    </div>
+
+    <h3 class="text-light text-center mb-4 animate-text">DBMS: Database Management System</h3>
+    <div class="text-center mb-5">
+        <img src="../images/certificate (1).jpg" alt="DBMS Certificate" class="img-fluid rounded shadow-lg hover-effect">
+    </div>
+
+    <h3 class="text-light text-center mb-4 animate-text">Introduction to IoT</h3>
+    <div class="text-center mb-5">
+        <img src="../images/certificate (4).jpg" alt="IoT Certificate" class="img-fluid rounded shadow-lg hover-effect">
+    </div>
+
+    <h3 class="text-light text-center mb-4 animate-text">Introduction to Cloud Computing</h3>
+    <div class="text-center mb-5">
+        <img src="../images/certificate (3).jpg" alt="Cloud Computing Certificate" class="img-fluid rounded shadow-lg hover-effect">
+    </div>
+</div>
+
+<%- include("partials/footer.ejs") %>

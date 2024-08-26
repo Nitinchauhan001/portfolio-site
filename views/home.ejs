@@ -1,0 +1,247 @@
+<%- include("partials/header.ejs") %>
+
+<style>
+  .custom-row {
+	display: flex;
+	flex-direction: column-reverse;
+	text-align: center;
+  }
+  
+  .custom-image-container {
+	margin-top: 30px;
+  }
+  
+  .custom-img {
+	max-width: 100%;
+	height: auto;
+  }
+  
+  @media (min-width: 992px) {
+	.custom-row {
+	  flex-direction: row-reverse;
+	  text-align: left;
+	}
+	
+	.custom-image-container {
+	  margin-top: 20px;
+	}
+	
+	.custom-text-container {
+	  text-align: left;
+	}
+  }
+  
+  
+
+  body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .gradient-background {
+    background: linear-gradient(135deg, #1c1c1c, #343434);
+    padding: 60px 0;
+  }
+
+  .custom-img {
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  }
+
+  .custom-text-container h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .custom-text-container p {
+    font-weight: 300;
+  }
+
+  h1.border-bottom {
+    border-bottom: 3px solid #f50057;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+    display: inline-block;
+  }
+
+  .text-body-emphasis {
+    color: #f50057;
+  }
+
+  .feature svg {
+    fill: #f50057;
+  }
+
+  .feature h3 {
+    color: #ffffff;
+    font-weight: 600;
+  }
+
+  .feature p {
+    color: #bbbbbb;
+  }
+
+  .card-cover {
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  .card-cover:hover {
+    transform: scale(1.05);
+  }
+
+  .text-shadow-1 {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  }
+
+  .lead {
+    font-size: 1.2rem;
+  }
+</style>
+
+<section class="gradient-background">
+  <div class="container">
+    <div class="row align-items-center g-5 py-5 custom-row">
+      <div class="col-12 col-sm-8 col-lg-6 text-center text-lg-end custom-image-container">
+        <img src="../images/Picsart_24-08-17_15-25-48-927.png" class="img-fluid custom-img" alt="Bootstrap Themes" loading="lazy">
+      </div>
+      <div class="col-lg-6 text-center text-lg-start custom-text-container">
+        <h1 class="display-3 text-white lh-1 mb-3">NITIN SIN<span class="text-danger fw-bold">GH</span></h1>
+        <p class="lead text-white">B.Tech (CSE) 2021-2025</p>
+        <p class="lead text-white">C/C++, OOPS, DSA, HTML, CSS, JavaScript, Node.js, Express.js, SQL, PostgreSQL</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container d-flex justify-content-center align-items-center">
+    <img class="img-fluid custom-img" src="../images/Picsart_24-08-21_13-20-56-553.png" alt="img" style="margin-top: 20px;">
+  </div>
+</section>
+
+<section>
+  <div class="container px-4 py-5" id="featured-3">
+    <h1 class="border-bottom">Education</h1>
+    <div class="row g-4 py-3 row-cols-1 row-cols-lg-3">
+      <div class="feature col">
+        <a href="https://iimtu.edu.in/">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+          </svg>
+        </a>
+        <h3 class="fs-3 text-white">Bachelor's of Technology in Computer Science</h3>
+        <p class="h6">IIMT UNIVERSITY</p>
+        <p class="h6">2021-2025</p>
+        <p class="h6">CGPA - 7.89</p>
+      </div>
+
+      <div class="feature col">
+        <a href="https://www.cvpschool.com/">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+          </svg>
+        </a>
+        <h3 class="fs-3 text-white">Higher Secondary Education (12th grade) PCM</h3>
+        <p class="h6">City Vocational Public School</p>
+        <p class="h6">2020-2021</p>
+        <p class="h6">Percentage - 83%</p>
+      </div>
+
+      <div class="feature col">
+        <a href="https://www.cvpschool.com/">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+          </svg>
+        </a>
+        <h3 class="fs-3 text-white">Secondary Education (10th grade)</h3>
+        <p class="h6">City Vocational Public School</p>
+        <p class="h6">2018-2019</p>
+        <p class="h6">Percentage - 80%</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container px-4 py-5" id="custom-cards">
+    <h1 class="border-bottom">Projects</h1>
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-3">
+      <a href="/blog" style="text-decoration: none;">
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('../images/Picsart_24-08-20_19-25-41-478.jpg');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Blog Website</h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img src="../images/Picsart_24-08-17_15-25-48-927.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                  <small>Blog website</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                  <small>3d</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="/e-commerce" style="text-decoration: none;">
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('../images/Picsart_24-08-20_19-25-55-369.jpg');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Referral based E-commerce Website </h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img src="../images/Picsart_24-08-17_15-25-48-927.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                  <small>E-commerce site</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                  <small>6d</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="/simon" style="text-decoration: none;">
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('../images/Picsart_24-08-20_19-26-06-106.jpg');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Memory Tester Simon Game</h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img src="../images/Picsart_24-08-17_15-25-48-927.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                  <small>Simon Game</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                  <small>2d</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<%- include("partials/footer.ejs") %>
